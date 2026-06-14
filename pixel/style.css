@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    width:100%;
+
+
+    background-image: url("./assets/Cenario.png.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:'Press Start 2P', cursive;
+}
+
+.overlay{
+    text-align:center;
+
+    background:rgba(0,0,0,.25);
+
+    padding:40px;
+    border-radius:20px;
+
+    backdrop-filter:blur(4px);
+}
+
+h1{
+    color:white;
+    font-size:2.5rem;
+    line-height:1.5;
+    text-shadow:4px 4px 0 #000;
+}
+
+p{
+    margin-top:20px;
+    color:white;
+    font-size:0.8rem;
+}
+
+button{
+    margin-top:40px;
+
+    border:none;
+
+    padding:20px 40px;
+
+    background:#f7c325;
+
+    color:#000;
+
+    cursor:pointer;
+
+    font-family:'Press Start 2P', cursive;
+
+    box-shadow:
+        0 6px 0 #a06c00;
+
+    transition:.2s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Final</title>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="startScreen">
+    <h1>MISSÃO FINAL</h1>
+    <p>Colete 20 corações para completar nossa aventura.</p>
+    
+    <div id="controlOptions">
+        <p>Como deseja jogar?</p>
+        <button class="controlBtn" onclick="iniciarJogo('keyboard')">⌨️ TECLADO</button>
+        <button class="controlBtn" onclick="iniciarJogo('mouse')">🖱️ MOUSE</button>
+    </div>
+</div>
+
+<div id="gameContainer">
+    <div id="hud">
+        ❤️ <span id="score">0</span>/20
+    </div>
+    <div id="player"></div>
+</div>
+
+<div id="final">
+    <img src="assets/NosmissãoFinal.jpeg.jpeg">
+    <h1>EU TE AMO ❤️</h1>
+    <p>Obrigado por completar nossa aventura.</p>
+
+    <button id="restartBtn" onclick="voltarParaInicio()"> Voltar para o inicio da nossa aventura</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
